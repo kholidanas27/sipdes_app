@@ -1,6 +1,6 @@
 @extends('layouts.auth')
 
-@section('title', 'Login')
+@section('title', 'Sipdes App')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -75,7 +75,8 @@
                     </button>
                 </div>
             </form>
-            <div class="mt-4 mb-3 text-center">
+            
+            <!-- <div class="mt-4 mb-3 text-center">
                 <div class="text-job text-muted">Login With Social</div>
             </div>
             <div class="row sm-gutters">
@@ -89,12 +90,12 @@
                         <span class="fab fa-twitter"></span> Twitter
                     </a>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
     <div class="text-muted mt-5 text-center">
-        Don't have an account? <a href="auth-register.html">Create One</a>
+        Don't have an account? <a href="{{ url('/auth-register') }}">Create One</a>
     </div>
 @endsection
 
