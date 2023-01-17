@@ -1,42 +1,40 @@
 {
-  "name": "summernote",
-  "description": "Super simple WYSIWYG editor",
-  "version": "0.8.20",
-  "license": "MIT",
-  "keywords": [
-    "editor",
-    "WYSIWYG"
+  "_args": [
+    [
+      "summernote@0.8.20",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/summernote/summernote.git"
+  "_from": "summernote@0.8.20",
+  "_id": "summernote@0.8.20",
+  "_inBundle": false,
+  "_integrity": "sha512-W9RhjQjsn+b1s9xiJQgJbCiYGJaDAc9CdEqXo+D13WuStG8lCdtKaO5AiNiSSMJsQJN2EfGSwbBQt+SFE2B8Kw==",
+  "_location": "/summernote",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "summernote@0.8.20",
+    "name": "summernote",
+    "escapedName": "summernote",
+    "rawSpec": "0.8.20",
+    "saveSpec": null,
+    "fetchSpec": "0.8.20"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/summernote/-/summernote-0.8.20.tgz",
+  "_spec": "0.8.20",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
   "author": {
     "name": "hackerwins",
-    "email": "<susukang98@gmail.com>"
+    "email": "<susukang98@gmail.com"
   },
-  "main": "dist/summernote.js",
-  "scripts": {
-    "dev": "eslint config && webpack serve --config=./config/webpack.development.js --progress",
-    "prebuild": "node ./config/build-fonts.js",
-    "build": "webpack --node-env production --mode=production --config=./config/webpack.production.js --progress",
-    "lint": "eslint src plugin test config",
-    "test": "karma start .karma/config.js --single-run",
-    "test:grep": "karma run .karma/config.js -- --grep",
-    "test:watch": "karma start .karma/config.js",
-    "test:travis": "karma start .karma/travis.js --single-run",
-    "test:sauce": "karma start .karma/saucelabs.js --single-run",
-    "test:debug": "karma start .karma/debug.js",
-    "_postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+  "bugs": {
+    "url": "https://github.com/summernote/summernote/issues"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "yarn lint && yarn run test"
-    }
-  },
+  "description": "Super simple WYSIWYG editor",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/eslint-parser": "^7.12.16",
@@ -103,5 +101,39 @@
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^4.3.0",
     "zip-webpack-plugin": "^4.0.1"
-  }
+  },
+  "homepage": "https://github.com/summernote/summernote#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn lint && yarn run test"
+    }
+  },
+  "keywords": [
+    "editor",
+    "WYSIWYG"
+  ],
+  "license": "MIT",
+  "main": "dist/summernote.js",
+  "name": "summernote",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/summernote/summernote.git"
+  },
+  "scripts": {
+    "_postinstall": "husky install",
+    "build": "webpack --node-env production --mode=production --config=./config/webpack.production.js --progress",
+    "dev": "eslint config && webpack serve --config=./config/webpack.development.js --progress",
+    "lint": "eslint src plugin test config",
+    "postpublish": "pinst --enable",
+    "prebuild": "node ./config/build-fonts.js",
+    "prepublishOnly": "pinst --disable",
+    "test": "karma start .karma/config.js --single-run",
+    "test:debug": "karma start .karma/debug.js",
+    "test:grep": "karma run .karma/config.js -- --grep",
+    "test:sauce": "karma start .karma/saucelabs.js --single-run",
+    "test:travis": "karma start .karma/travis.js --single-run",
+    "test:watch": "karma start .karma/config.js"
+  },
+  "version": "0.8.20"
 }

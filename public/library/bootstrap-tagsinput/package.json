@@ -1,33 +1,45 @@
 {
-  "name": "bootstrap-tagsinput",
-  "title": "Bootstrap Tags Input",
-  "version": "0.7.1",
-  "description": "jQuery plugin providing a Twitter Bootstrap user interface for managing tags.",
-  "scripts": {
-    "test": "karma start --single-run --no-auto-watch"
+  "_args": [
+    [
+      "bootstrap-tagsinput@0.7.1",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
+  ],
+  "_from": "bootstrap-tagsinput@0.7.1",
+  "_id": "bootstrap-tagsinput@0.7.1",
+  "_inBundle": false,
+  "_integrity": "sha512-xSks67GWgXLnmO5gqp788vhh7WoXd9mHj5uKE5zg8rvw3sNYYSCjrSlrPRlPdpYKwmuxeuf2jsNjBSWEucyB1w==",
+  "_location": "/bootstrap-tagsinput",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bootstrap-tagsinput@0.7.1",
+    "name": "bootstrap-tagsinput",
+    "escapedName": "bootstrap-tagsinput",
+    "rawSpec": "0.7.1",
+    "saveSpec": null,
+    "fetchSpec": "0.7.1"
   },
-  "main": "dist/bootstrap-tagsinput.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/timschlechter/bootstrap-tagsinput.git"
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bootstrap-tagsinput/-/bootstrap-tagsinput-0.7.1.tgz",
+  "_spec": "0.7.1",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
+  "author": {
+    "name": "Tim Schlechter"
   },
-  "author": "Tim Schlechter",
+  "banner": "/*\n * <%= pkg.name %> v<%= pkg.version %> by <%= pkg.author %>\n * <%= pkg.license.url %>\n */\n",
+  "bugs": {
+    "url": "https://github.com/timschlechter/bootstrap-tagsinput/issues"
+  },
   "contributors": [
     {
       "name": "Luckner Jr Jean-Baptiste"
     }
   ],
-  "license": "MIT",
-  "homepage": "http://timschlechter.github.io/bootstrap-tagsinput/examples/",
-  "download": "http://timschlechter.github.io/bootstrap-tagsinput/build/bootstrap-tagsinput.zip",
-  "keywords": [
-    "tags",
-    "bootstrap",
-    "input",
-    "select",
-    "form"
-  ],
-  "readmeFilename": "README.md",
+  "description": "jQuery plugin providing a Twitter Bootstrap user interface for managing tags.",
   "devDependencies": {
     "bower": "~1.3.8",
     "grunt": "~0.4.1",
@@ -43,5 +55,25 @@
     "karma-phantomjs-launcher": "~0.1.3",
     "phantomjs": "~1.9.7-15"
   },
-  "banner": "/*\n * <%= pkg.name %> v<%= pkg.version %> by <%= pkg.author %>\n * <%= pkg.license.url %>\n */\n"
+  "download": "http://timschlechter.github.io/bootstrap-tagsinput/build/bootstrap-tagsinput.zip",
+  "homepage": "http://timschlechter.github.io/bootstrap-tagsinput/examples/",
+  "keywords": [
+    "tags",
+    "bootstrap",
+    "input",
+    "select",
+    "form"
+  ],
+  "license": "MIT",
+  "main": "dist/bootstrap-tagsinput.js",
+  "name": "bootstrap-tagsinput",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timschlechter/bootstrap-tagsinput.git"
+  },
+  "scripts": {
+    "test": "karma start --single-run --no-auto-watch"
+  },
+  "title": "Bootstrap Tags Input",
+  "version": "0.7.1"
 }

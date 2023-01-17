@@ -1,32 +1,60 @@
 {
-  "name": "jquery-sparkline",
-  "version": "2.4.0",
-  "description": "jQuery Sparklines",
-  "main": "jquery.sparkline.js",
-  "scripts": {
-    "build": "node build",
-    "postbuild": "uglifyjs jquery.sparkline.js > jquery.sparkline.min.js"
+  "_args": [
+    [
+      "jquery-sparkline@2.4.0",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
+  ],
+  "_from": "jquery-sparkline@2.4.0",
+  "_id": "jquery-sparkline@2.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-SzjpMkOwlnqZpH4Ni2UbdRU5GxDl/BljgN8Smlun7CXUDqRhjPf2eolJ37KKcaG0/ufsMKY+XDERfPTV1hIcjg==",
+  "_location": "/jquery-sparkline",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "jquery-sparkline@2.4.0",
+    "name": "jquery-sparkline",
+    "escapedName": "jquery-sparkline",
+    "rawSpec": "2.4.0",
+    "saveSpec": null,
+    "fetchSpec": "2.4.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imsky/jquery.sparkline.git"
-  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-sparkline/-/jquery-sparkline-2.4.0.tgz",
+  "_spec": "2.4.0",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
   "author": {
     "name": "gwatts"
   },
-  "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/gwatts/jquery.sparkline/issues"
   },
+  "description": "jQuery Sparklines",
+  "devDependencies": {
+    "shelljs": "~0.6",
+    "uglify-js": "~2.6"
+  },
   "homepage": "http://omnipotent.net/jquery.sparkline",
+  "license": "BSD-2-Clause",
+  "main": "jquery.sparkline.js",
   "maintainers": [
     {
       "name": "imsky",
       "email": "hello@imsky.co"
     }
   ],
-  "devDependencies": {
-    "shelljs": "~0.6",
-    "uglify-js": "~2.6"
-  }
+  "name": "jquery-sparkline",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imsky/jquery.sparkline.git"
+  },
+  "scripts": {
+    "build": "node build",
+    "postbuild": "uglifyjs jquery.sparkline.js > jquery.sparkline.min.js"
+  },
+  "version": "2.4.0"
 }

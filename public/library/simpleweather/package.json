@@ -1,35 +1,41 @@
 {
-  "name": "simpleweather",
-  "version": "3.1.0",
-  "description": "A simple jQuery plugin to display current weather data for any location and doesn't get in your way. Handcrafted with ♥ from Austin, Texas by James Fleeting.",
-  "keywords": [
-    "jquery",
-    "javascript",
-    "weather",
-    "plugin",
-    "simple"
+  "_args": [
+    [
+      "simpleweather@3.1.0",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
   ],
-  "homepage": "http://simpleweatherjs.com",
-  "bugs": "https://github.com/monkeecreate/jquery.simpleWeather/issues",
+  "_from": "simpleweather@3.1.0",
+  "_id": "simpleweather@3.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-xVcjXiJYqRQpmv7M+WkciMMMOxYLN4PCwcW2H4qY0mbVcbisJfMgUaf8x/b+5mMS1324ZJlU+p0r8/VKFH8f/A==",
+  "_location": "/simpleweather",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "simpleweather@3.1.0",
+    "name": "simpleweather",
+    "escapedName": "simpleweather",
+    "rawSpec": "3.1.0",
+    "saveSpec": null,
+    "fetchSpec": "3.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/simpleweather/-/simpleweather-3.1.0.tgz",
+  "_spec": "3.1.0",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
   "author": {
     "name": "James Fleeting",
     "email": "hello@jamesfleeting.com",
     "url": "https://github.com/fleeting"
   },
-  "main": "jquery.simpleWeather.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/monkeecreate/jquery.simpleWeather.git"
+  "bugs": {
+    "url": "https://github.com/monkeecreate/jquery.simpleWeather/issues"
   },
-  "engines": {
-    "node": ">=0.8.0",
-    "npm": ">=1.2.10"
-  },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "description": "A simple jQuery plugin to display current weather data for any location and doesn't get in your way. Handcrafted with ♥ from Austin, Texas by James Fleeting.",
   "devDependencies": {
     "gulp": "latest",
     "gulp-bump": "latest",
@@ -40,5 +46,29 @@
     "gulp-size": "latest",
     "gulp-uglify": "latest",
     "jshint-stylish": "latest"
-  }
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "homepage": "http://simpleweatherjs.com",
+  "keywords": [
+    "jquery",
+    "javascript",
+    "weather",
+    "plugin",
+    "simple"
+  ],
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "main": "jquery.simpleWeather.js",
+  "name": "simpleweather",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/monkeecreate/jquery.simpleWeather.git"
+  },
+  "version": "3.1.0"
 }

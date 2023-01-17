@@ -1,19 +1,42 @@
 {
-  "name": "chocolat",
-  "version": "0.4.21",
-  "description": " Responsive jQuery Lightbox Plugin",
-  "main": "dist/js/jquery.chocolat.js",
-  "directories": {
-    "test": "test"
+  "_args": [
+    [
+      "chocolat@0.4.21",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
+  ],
+  "_from": "chocolat@0.4.21",
+  "_id": "chocolat@0.4.21",
+  "_inBundle": false,
+  "_integrity": "sha512-KvaGUM4FAYsk+8Mfwrzw90zwP9Dfb4t9grwwDb17hqVxT+Z+T6hpAD8xkGkIwn9xxwiQdOpl0G6jn04O+UZwnA==",
+  "_location": "/chocolat",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "chocolat@0.4.21",
+    "name": "chocolat",
+    "escapedName": "chocolat",
+    "rawSpec": "0.4.21",
+    "saveSpec": null,
+    "fetchSpec": "0.4.21"
   },
-  "scripts": {
-    "build": "gulp build",
-    "test": "./node_modules/.bin/mocha-phantomjs test/index.html",
-    "prettier": "./node_modules/.bin/prettier src/js/*.js test/*.js --write"
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/chocolat/-/chocolat-0.4.21.tgz",
+  "_spec": "0.4.21",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
+  "author": {
+    "name": "Nicolas Turlais"
+  },
+  "bugs": {
+    "url": "https://github.com/nicolas-t/Chocolat/issues"
   },
   "dependencies": {
     "jquery": "^3.0"
   },
+  "description": " Responsive jQuery Lightbox Plugin",
   "devDependencies": {
     "chai": "^3.0.0",
     "gulp": "^3.9.0",
@@ -27,25 +50,32 @@
     "prettier": "1.15.2",
     "prettier-check": "^2.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicolas-t/Chocolat.git"
+  "directories": {
+    "test": "test"
   },
+  "homepage": "http://chocolat.insipi.de",
   "keywords": [
     "jquery",
     "lightbox",
     "plugin",
     "responsive"
   ],
-  "author": "Nicolas Turlais",
   "licenses": [
     {
       "type": "GPLv3",
       "url": "http://chocolat.insipi.de"
     }
   ],
-  "bugs": {
-    "url": "https://github.com/nicolas-t/Chocolat/issues"
+  "main": "dist/js/jquery.chocolat.js",
+  "name": "chocolat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas-t/Chocolat.git"
   },
-  "homepage": "http://chocolat.insipi.de"
+  "scripts": {
+    "build": "gulp build",
+    "prettier": "prettier src/js/*.js test/*.js --write",
+    "test": "mocha-phantomjs test/index.html"
+  },
+  "version": "0.4.21"
 }

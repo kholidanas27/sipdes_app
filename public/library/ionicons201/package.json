@@ -1,11 +1,39 @@
 {
-  "name": "ionicons201",
-  "version": "1.0.0",
+  "_args": [
+    [
+      "ionicons201@1.0.0",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
+  ],
+  "_from": "ionicons201@1.0.0",
+  "_id": "ionicons201@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-7PZISbGUrZaKMGPusTLWxjH8Lm88XDEsr+N+WKV//cvahXsGpcOf+1v1zMk48uEhaUksLc5JOr6Eb3KFmeufCw==",
+  "_location": "/ionicons201",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ionicons201@1.0.0",
+    "name": "ionicons201",
+    "escapedName": "ionicons201",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ionicons201/-/ionicons201-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
+  "author": "",
   "description": "ionicons",
+  "license": "ISC",
   "main": "index.js",
+  "name": "ionicons201",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "version": "1.0.0"
 }

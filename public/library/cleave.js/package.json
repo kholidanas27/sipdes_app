@@ -1,46 +1,41 @@
 {
-  "name": "cleave.js",
-  "title": "cleave.js",
-  "description": "JavaScript library for formatting input text content when you are typing",
-  "keywords": [
-    "cleave",
-    "javascript",
-    "html",
-    "format",
-    "form",
-    "input",
-    "input-mask",
-    "mask",
-    "formatter",
-    "filter",
-    "vanilla",
-    "react"
+  "_args": [
+    [
+      "cleave.js@1.6.0",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
   ],
-  "version": "1.6.0",
-  "files": [
-    "src",
-    "dist",
-    "react.js"
+  "_from": "cleave.js@1.6.0",
+  "_id": "cleave.js@1.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ivqesy3j5hQVG3gywPfwKPbi/7ZSftY/UNp5uphnqjr25yI2CP8FS2ODQPzuLXXnNLi29e2+PgPkkiKUXLs/Nw==",
+  "_location": "/cleave.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cleave.js@1.6.0",
+    "name": "cleave.js",
+    "escapedName": "cleave.js",
+    "rawSpec": "1.6.0",
+    "saveSpec": null,
+    "fetchSpec": "1.6.0"
+  },
+  "_requiredBy": [
+    "/"
   ],
+  "_resolved": "https://registry.npmjs.org/cleave.js/-/cleave.js-1.6.0.tgz",
+  "_spec": "1.6.0",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
   "author": {
     "name": "Max Huang",
-    "url": "http://github.com/nosir",
-    "email": "risonhuang@gmail.com"
+    "email": "risonhuang@gmail.com",
+    "url": "http://github.com/nosir"
   },
-  "license": "Apache-2.0",
-  "bugs": "https://github.com/nosir/cleave.js/issues",
-  "homepage": "https://github.com/nosir/cleave.js",
-  "docs": "https://github.com/nosir/cleave.js/blob/master/README.md",
-  "main": "dist/cleave.js",
-  "module": "dist/cleave-esm.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nosir/cleave.js.git"
+  "bugs": {
+    "url": "https://github.com/nosir/cleave.js/issues"
   },
-  "scripts": {
-    "test": "gulp test",
-    "build": "gulp build"
-  },
+  "description": "JavaScript library for formatting input text content when you are typing",
   "devDependencies": {
     "babel-core": "^6.11.4",
     "babel-eslint": "^6.0.5",
@@ -78,5 +73,40 @@
     "watchify": "^3.7.0",
     "webpack": "^1.13.1",
     "webpack-stream": "^3.2.0"
-  }
+  },
+  "docs": "https://github.com/nosir/cleave.js/blob/master/README.md",
+  "files": [
+    "src",
+    "dist",
+    "react.js"
+  ],
+  "homepage": "https://github.com/nosir/cleave.js",
+  "keywords": [
+    "cleave",
+    "javascript",
+    "html",
+    "format",
+    "form",
+    "input",
+    "input-mask",
+    "mask",
+    "formatter",
+    "filter",
+    "vanilla",
+    "react"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/cleave.js",
+  "module": "dist/cleave-esm.js",
+  "name": "cleave.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nosir/cleave.js.git"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp test"
+  },
+  "title": "cleave.js",
+  "version": "1.6.0"
 }

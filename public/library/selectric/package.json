@@ -1,35 +1,44 @@
 {
-  "name": "selectric",
-  "version": "1.13.0",
-  "main": "public/jquery.selectric.js",
-  "title": "jQuery Selectric",
+  "_args": [
+    [
+      "selectric@1.13.0",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
+  ],
+  "_from": "selectric@1.13.0",
+  "_id": "selectric@1.13.0",
+  "_inBundle": false,
+  "_integrity": "sha512-kb1iOLBTvg0EiVieJjXlFj07RTKoom0a3/SedWD1tuQ47N2S9l4gvkhTvGhhhhdh/zCgkbZ44/GiczT8dWfAGA==",
+  "_location": "/selectric",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "selectric@1.13.0",
+    "name": "selectric",
+    "escapedName": "selectric",
+    "rawSpec": "1.13.0",
+    "saveSpec": null,
+    "fetchSpec": "1.13.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/selectric/-/selectric-1.13.0.tgz",
+  "_spec": "1.13.0",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
   "author": {
     "name": "Leonardo Santos",
     "email": "leocs.1991@gmail.com"
   },
-  "license": "MIT",
-  "description": "Fast, simple and light jQuery plugin to customize HTML selects",
-  "keywords": [
-    "jquery-plugin",
-    "ecosystem:jquery",
-    "select",
-    "selectbox",
-    "dropdown",
-    "form",
-    "input",
-    "ui"
-  ],
-  "docs": "http://selectric.js.org/",
-  "demo": "http://selectric.js.org/demo",
-  "bugs": "https://github.com/lcdsantos/jQuery-Selectric/issues",
-  "homepage": "http://selectric.js.org/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lcdsantos/jQuery-Selectric.git"
+  "bugs": {
+    "url": "https://github.com/lcdsantos/jQuery-Selectric/issues"
   },
+  "demo": "http://selectric.js.org/demo",
   "dependencies": {
     "jquery": "^3.1.1"
   },
+  "description": "Fast, simple and light jQuery plugin to customize HTML selects",
   "devDependencies": {
     "codecov": "^1.0.1",
     "eslint": "^3.13.1",
@@ -57,11 +66,32 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "phantomjs-prebuilt": "^2.1.14"
   },
+  "docs": "http://selectric.js.org/",
+  "homepage": "http://selectric.js.org/",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "select",
+    "selectbox",
+    "dropdown",
+    "form",
+    "input",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "public/jquery.selectric.js",
+  "name": "selectric",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcdsantos/jQuery-Selectric.git"
+  },
   "scripts": {
+    "codecov": "codecov",
+    "lint": "eslint src/*.js",
     "test": "npm run lint && npm run test:single",
     "test:single": "karma start --single-run --browsers PhantomJS",
-    "test:watch": "karma start",
-    "lint": "eslint src/*.js",
-    "codecov": "codecov"
-  }
+    "test:watch": "karma start"
+  },
+  "title": "jQuery Selectric",
+  "version": "1.13.0"
 }

@@ -1,32 +1,44 @@
 {
-  "name": "jqvmap",
-  "version": "1.5.1",
-  "homepage": "http://jqvmap.com",
+  "_args": [
+    [
+      "jqvmap@github:10bestdesign/jqvmap",
+      "D:\\PROJECT\\MYAPPS\\laravel-stisla"
+    ]
+  ],
+  "_from": "jqvmap@github:10bestdesign/jqvmap",
+  "_id": "jqvmap@git+ssh://git@github.com/10bestdesign/jqvmap.git#a72d26248c87b6db8ea1d962475a506bdd989134",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/jqvmap",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "jqvmap@github:10bestdesign/jqvmap",
+    "name": "jqvmap",
+    "escapedName": "jqvmap",
+    "rawSpec": "github:10bestdesign/jqvmap",
+    "saveSpec": "github:10bestdesign/jqvmap",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+ssh://git@github.com/10bestdesign/jqvmap.git#a72d26248c87b6db8ea1d962475a506bdd989134",
+  "_spec": "github:10bestdesign/jqvmap",
+  "_where": "D:\\PROJECT\\MYAPPS\\laravel-stisla",
   "author": {
     "name": "JQVMap",
     "email": "me@peterschmalfeldt.com",
     "url": "http://jqvmap.com"
   },
-  "license": "(MIT OR GPL-3.0)",
-  "description": "jQuery Vector Map Library",
-  "main": "dist/jquery.vmap.min.js",
-  "keywords": [
-    "jquery",
-    "map",
-    "svg",
-    "vml",
-    "vector"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/manifestinteractive/jqvmap.git"
+  "bugs": {
+    "url": "https://github.com/manifestinteractive/jqvmap/issues"
   },
   "dependencies": {
     "jquery": "~1.11.3"
   },
-  "scripts": {
-    "test": "grunt test"
-  },
+  "description": "jQuery Vector Map Library",
   "devDependencies": {
     "eslint": "^0.21.0",
     "grunt": "^0.4.5",
@@ -41,5 +53,24 @@
     "grunt-shell": "^1.1.1",
     "gruntfile-gtx": "^0.3.0",
     "require-directory": "^2.0.0"
-  }
+  },
+  "homepage": "http://jqvmap.com",
+  "keywords": [
+    "jquery",
+    "map",
+    "svg",
+    "vml",
+    "vector"
+  ],
+  "license": "(MIT OR GPL-3.0)",
+  "main": "dist/jquery.vmap.min.js",
+  "name": "jqvmap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manifestinteractive/jqvmap.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "1.5.1"
 }
