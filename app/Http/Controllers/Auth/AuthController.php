@@ -10,48 +10,48 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends BaseController
 {
-    /**
-     * Register api
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function register(Request $request)
+    public function index()
     {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required',
-            'email' => 'required|email',
-            'password' => 'required',
-            'c_password' => 'required|same:password',
-        ]);
-
-        if ($validator->fails()) {
-            return $this->sendError('Validation Error.', $validator->errors());
+        if ($user = Auth::user()) {
+            if ($user->level == 'admin') {
+                return redirect()->intended('admin');
+            } elseif ($user->level == 'user') {
+                return redirect()->intended('user');
+            }
         }
-
-        $input = $request->all();
-        $input['password'] = bcrypt($input['password']);
-        $user = User::create($input);
-        $success['token'] =  $user->createToken('MyApp')->accessToken;
-        $success['name'] =  $user->name;
-
-        return $this->sendResponse($success, 'User register successfully.');
+        
+        return view('pages.auth.login');
     }
 
-    /**
-     * Login api
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function login(Request $request)
+    public function proses_login(Request $request)
     {
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            $user = Auth::user();
-            $success['token'] =  $user->createToken('MyApp')->accessToken;
-            $success['name'] =  $user->name;
+        request()->validate(
+            [
+                'username' => 'required',
+                'password' => 'required',
+            ]);
 
-            return $this->sendResponse($success, 'User login successfully.');
-        } else {
-            return $this->sendError('Unauthorised.', ['error' => 'Unauthorised']);
-        }
+        $kredensil = $request->only('username','password');
+
+            if (Auth::attempt($kredensil)) {
+                $user = Auth::user();
+                if ($user->level == 'admin') {
+                    return redirect()->intended('admin');
+                } elseif ($user->level == 'user') {
+                    return redirect()->intended('user');
+                }
+                return redirect()->intended('/login');
+            }
+
+        return redirect('login')
+                                ->withInput()
+                                ->withErrors(['login_gagal' => 'These credentials do not match our records.']);
+    }
+
+    public function logout(Request $request)
+    {
+       $request->session()->flush();
+       Auth::logout();
+       return Redirect('login');
     }
 }

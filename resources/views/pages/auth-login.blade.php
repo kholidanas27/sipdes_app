@@ -95,7 +95,7 @@
         </div>
     </div>
     <div class="text-muted mt-5 text-center">
-        Don't have an account? <a href="{{ url('/auth-register') }}">Create One</a>
+        Don't have an account? <a href="{{ url('/register') }}">Create One</a>
     </div>
 @endsection
 
