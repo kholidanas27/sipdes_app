@@ -417,7 +417,7 @@
                                         <a href="#"
                                             class="dropdown-item">View All</a>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                         <div class="card-body">

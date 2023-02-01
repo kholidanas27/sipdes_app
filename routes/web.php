@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Profile\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,10 +26,14 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['role:admin']], function () {
-        Route::resource('admin', AdminController::class);
+        // Route::resource('admin', AdminController::class);
+        Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+        Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     });
     Route::group(['middleware' => ['role:user']], function () {
-        Route::resource('user', AdminController::class);
+        // Route::resource('user', AdminController::class);
+        Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+        Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     });
 });
 
