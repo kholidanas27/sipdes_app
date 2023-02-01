@@ -27,15 +27,16 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['role:admin']], function () {
         // Route::resource('admin', AdminController::class);
-        Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+        Route::get('/dashboard-admin', [AdminController::class, 'index'])->name('dashboard-admin');
         Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     });
     Route::group(['middleware' => ['role:user']], function () {
         // Route::resource('user', AdminController::class);
-        Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+        Route::get('/dashboard-user', [AdminController::class, 'index'])->name('dashboard-user');
         Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     });
 });
+
 
 // lama
 // Route::redirect('/', '/login');

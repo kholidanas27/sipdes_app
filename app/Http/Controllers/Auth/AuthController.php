@@ -36,9 +36,9 @@ class AuthController extends BaseController
             if (Auth::attempt($kredensil)) {
                 $user = Auth::user();
                 if ($user->level == 'admin') {
-                    return redirect('dashboard');
+                    return redirect()->route('dashboard-admin');
                 } elseif ($user->level == 'user') {
-                    return redirect('dashboard');
+                    return redirect()->route('dashboard-user');
                 }
                 return redirect()->intended('/login');
             }
