@@ -28,12 +28,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['role:admin']], function () {
         // Route::resource('admin', AdminController::class);
         Route::get('/dashboard-admin', [AdminController::class, 'index'])->name('dashboard-admin');
-        Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+        Route::get('/profile-admin', [ProfileController::class, 'index'])->name('profile-admin');
     });
     Route::group(['middleware' => ['role:user']], function () {
         // Route::resource('user', AdminController::class);
         Route::get('/dashboard-user', [AdminController::class, 'index'])->name('dashboard-user');
-        Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+        Route::get('/profile-user', [ProfileController::class, 'index'])->name('profile-user');
     });
 });
 

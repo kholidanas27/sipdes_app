@@ -249,10 +249,20 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-title">Logged in 5 min ago</div>
-                <a href="{{ route('profile') }}"
+
+                @if(auth()->user()->level == 'admin')
+                <a href="{{ route('profile-admin') }}"
                     class="dropdown-item has-icon">
                     <i class="far fa-user"></i> Profile
                 </a>
+                @endif
+
+                @if(auth()->user()->level == 'user')
+                <a href="{{ route('profile-user') }}"
+                    class="dropdown-item has-icon">
+                    <i class="far fa-user"></i> Profile
+                </a>
+                @endif
                 <a href="features-activities.html"
                     class="dropdown-item has-icon">
                     <i class="fas fa-bolt"></i> Activities
