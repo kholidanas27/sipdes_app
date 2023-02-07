@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'General Dashboard')
+@section('title', 'Sipdes App')
 
 @push('style')
     <!-- CSS Libraries -->
