@@ -93,8 +93,8 @@
                 </ul>
             </li>
             <li class="menu-header">Master</li>
-            <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('blank-page') }}"><i></i> <span>Dusun</span></a>
+            <li class="{{ Request::is('dusun') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('dusun-index') }}"><i></i> <span>Dusun</span></a>
             </li>
             <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ url('blank-page') }}"><i></i> <span>Desa</span></a>

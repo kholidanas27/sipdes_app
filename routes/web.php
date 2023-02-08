@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Master\MDusunController;
 use App\Http\Controllers\Profile\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,9 @@ Route::group(['middleware' => ['auth']], function () {
         // Route::resource('admin', AdminController::class);
         Route::get('/dashboard-admin', [AdminController::class, 'index'])->name('dashboard-admin');
         Route::get('/profile-admin', [ProfileController::class, 'index'])->name('profile-admin');
+
+        // MASTER
+        Route::get('/dusun', [MDusunController::class, 'index'])->name('dusun-index');
     });
     Route::group(['middleware' => ['role:user']], function () {
         // Route::resource('user', AdminController::class);
