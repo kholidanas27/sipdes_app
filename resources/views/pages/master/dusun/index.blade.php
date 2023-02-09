@@ -20,12 +20,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header">
-                            <div>
-                                <form class="card-header-form">
-                                    <input type="text" name="search" class="form-control" placeholder="Search">
-                                </form>
-                            </div>
+                        <div class="card-header d-flex justify-content-between">
+                            <form class="card-header-form">
+                                <input type="text" name="search" class="form-control" placeholder="Search">
+                            </form>
                             <a href="#" class="btn btn-primary">Add</a>
                         </div>
                         <div class="card-body">
